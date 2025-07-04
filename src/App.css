@@ -483,20 +483,60 @@ li {
   margin: 5px 0;
 }
 
-  /* Responsive */
 @media (max-width: 768px) {
-  .login-box {
-    max-width: 100%;
+  /* Container Fix */
+  .section {
+    flex-direction: column;
   }
 
-  .container-fluid {
-    padding: 1rem 0;
+  /* Sidebar */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 15px;
+    text-align: center;
   }
-    .login-box {
+
+  .button-class {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: auto;
+  }
+
+  /* Main Content */
+  .main-content {
+    padding: 15px;
+    width: 100%;
+  }
+
+  /* Filter Panel */
+  .filter-panel {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  /* Login Section */
+  .login-section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .login-box {
     max-width: 90%;
     height: auto;
     padding: 2rem 1.5rem;
-    margin: 20px;
+    margin: auto;
   }
 
   .login-logo {
@@ -506,46 +546,19 @@ li {
 
   .title {
     font-size: 1.2rem;
-    margin-left: 50px;
+    margin-left: 0;
     margin-top: -45px;
+    text-align: center;
   }
 
   .subtitle {
     font-size: 0.9rem;
-    margin-left: 50px;
+    margin-left: 0;
     margin-top: -25px;
+    text-align: center;
   }
 
-  .sidebar {
-    width: 50%;
-    height: auto;
-    border-radius: 0;
-    padding: 15px;
-  }
-
-  .button-class {
-    flex-direction: column;
-    overflow-x: auto;
-    gap: 10px;
-    justify-content: space-around;
-  }
-
-  .button {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .main-content {
-    padding: 10px;
-  }
-
-  .filter-panel {
-    width: 100%;
-    border-left: none;
-    border-top: 1px solid #ddd;
-    margin-top: 20px;
-  }
-
+  /* Course Cards */
   .course-card {
     padding: 10px;
   }
@@ -562,16 +575,25 @@ li {
   .progress-label {
     font-size: 10px;
   }
-.filter-panel {
-    width: 10%;
-    border-left: none;
-    border-top: 1px solid #ddd;
-    margin-top: 20px;
+
+  /* Stats Section */
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
+
+  .stats h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Announcements */
   .announcement-item {
     font-size: 12px;
     padding: 0.4rem;
   }
+
+
 
 }
  
